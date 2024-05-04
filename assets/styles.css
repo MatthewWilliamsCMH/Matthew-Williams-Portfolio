@@ -57,9 +57,13 @@ html {
     height:100%;
 }
 
+.main {
+    display:flex;
+}
+
 /* ----- header ----- */
 .header {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin-left:20px;
     display:flex;
     justify-content:space-between;
@@ -96,38 +100,82 @@ html {
 
 /* ----- sidebar ----- */
 .sidebar {
-    border:1px solid red;
+    /* border:1px solid red; */
     margin-left:20px;
     max-width:200px;
     min-width:200px;
-    padding:20px;
+    margin-bottom:10px;
     text-align:center;
 }
+
+.sidebar div {
+    /* border:1px solid black; */
+    margin-bottom:none;
+}
+
 .sidebar h2 {
     text-transform:lowercase;
     font-variant:small-caps;
     font-size:24px;
     letter-spacing:.40rem;
+    margin-bottom:20px;
+    padding-bottom:5px;
+    border-bottom: 1px solid black;
 }
 
-.sidebar div {
-    border:1px solid black;
-}
-
-.sidebar div p {
+.sidebar div ul li {
     padding-bottom:20px;
-    /* margin-bottom:20px; */
 }
 
-.sidebar div p::after {
+.sidebar div ul li::after {
     text-align:center;
     content:"";
     display:block;
     padding-bottom:20px;
-    margin:0 40px;
+    margin:0 70px;
     border-bottom:1px solid black;
+}
+
+.sidebar div ul li:last-child::after {
+    border-bottom:none;
+    padding-bottom:none;
 }
 
 .sidebar a {
     text-decoration:none;
+}
+
+/* ----- page ----- */
+.page {
+    display:flex;
+    align-items:flex-start;
+    /* border: 1px solid blue; */
+    margin-left:20px;
+    padding: 20px;
+}
+
+
+.page td {
+    padding:0px 10px 5px 0;
+    vertical-align:top;
+    
+}
+
+.page h3 {
+    font-weight:700;
+    margin-top:10px;
+}
+
+.page h3:first-child {
+    margin-top:0;
+}
+
+/* ----- page ----- */
+footer {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:4px;
+    margin-left:20px;
+    margin-bottom:20px;
+    position:fixed;
+    bottom:0;
 }
