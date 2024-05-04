@@ -51,11 +51,101 @@
     font-style: normal;
 }
 
-/* ---------- globals ---------- */
+.alegreya-sans-thin {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .alegreya-sans-light {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .alegreya-sans-regular {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .alegreya-sans-medium {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .alegreya-sans-bold {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .alegreya-sans-extrabold {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .alegreya-sans-black {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .alegreya-sans-thin-italic {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .alegreya-sans-light-italic {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .alegreya-sans-regular-italic {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .alegreya-sans-medium-italic {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .alegreya-sans-bold-italic {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .alegreya-sans-extrabold-italic {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .alegreya-sans-black-italic {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+/* ---------- universal ---------- */
 html {
     max-width:800px;
     height:100%;
 }
+
+a {
+    text-decoration:none;
+}
+
 
 .main {
     display:flex;
@@ -70,9 +160,15 @@ html {
     padding: 20px;
 }
 .header h1 {
-    display: inline-block;
     font-family: "Alegreya", serf;
+    font-weight:700;
     font-size:36px;
+}
+
+.header div p:hover {
+    text-shadow:0 0 10px orangered;
+    font-weight:800;
+    cursor:pointer;
 }
 
 .header div {
@@ -80,7 +176,7 @@ html {
     align-items:flex-end;
 }
 
-.header div ul {
+/* .header div ul {
     list-style-type: none;
 }
 
@@ -96,7 +192,7 @@ html {
 
 .header div ul li:first-child::before {
     content:none;
-}
+} */
 
 /* ----- sidebar ----- */
 .sidebar {
@@ -111,6 +207,11 @@ html {
 .sidebar div {
     /* border:1px solid black; */
     margin-bottom:none;
+}
+
+.sidebar img {
+    max-width:160px;
+    margin-below:20px;
 }
 
 .sidebar h2 {
@@ -141,12 +242,8 @@ html {
     padding-bottom:none;
 }
 
-.sidebar a {
-    text-decoration:none;
-}
-
 /* ----- page ----- */
-.page {
+.resume {
     display:flex;
     align-items:flex-start;
     /* border: 1px solid blue; */
@@ -154,26 +251,30 @@ html {
     padding: 20px;
 }
 
-
-.page td {
+.resume td {
     padding:0px 10px 5px 0;
     vertical-align:top;
     
 }
 
-.page h3 {
+.resume h3 {
     font-weight:700;
     margin-top:10px;
 }
 
-.page h3:first-child {
+.resume h3:first-child {
     margin-top:0;
 }
 
+#contact {
+    .color:red;
+    align-items:flex-end;
+}
+
 /* ----- page ----- */
-footer {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:4px;
+footer p {
+    font-family:"Alegreya Sans", sans-serif;
+    font-size:12px;
     margin-left:20px;
     margin-bottom:20px;
     position:fixed;
