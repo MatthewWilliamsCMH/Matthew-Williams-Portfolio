@@ -1,282 +1,177 @@
-/* ---------- fonts ---------- */
-.alegreya-400 {
-    font-family: "Alegreya", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .alegreya-500 {
-    font-family: "Alegreya", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-  }
-
-  .alegreya-600 {
-    font-family: "Alegreya", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-  }
-
-  .alegreya-700 {
-    font-family: "Alegreya", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-  }
-  .alegreya-800 {
-    font-family: "Alegreya", serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-  }
-  .alegreya-900 {
-    font-family: "Alegreya", serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-  }
-
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    color: black;
-    font-size:16px;
-    font-family: "Alegreya", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.alegreya-sans-thin {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .alegreya-sans-light {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .alegreya-sans-regular {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .alegreya-sans-medium {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .alegreya-sans-bold {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .alegreya-sans-extrabold {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .alegreya-sans-black {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .alegreya-sans-thin-italic {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .alegreya-sans-light-italic {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .alegreya-sans-regular-italic {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .alegreya-sans-medium-italic {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .alegreya-sans-bold-italic {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .alegreya-sans-extrabold-italic {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-  }
-  
-  .alegreya-sans-black-italic {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  
-
 /* ---------- universal ---------- */
-html {
-    max-width:800px;
-    height:100%;
+  * {
+    font-family: "Alegreya", serif;
+    font-size:16px;
+    font-weight:400;
+    padding:0;
+    margin:0;
+    color:black;
 }
 
 a {
     text-decoration:none;
 }
 
-
-.main {
-    display:flex;
+h2 {
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:20px;
 }
 
-/* ----- header ----- */
+/* ---------- header ---------- */
 .header {
-    /* border: 1px solid blue; */
-    margin-left:20px;
     display:flex;
     justify-content:space-between;
-    padding: 20px;
-}
-.header h1 {
-    font-family: "Alegreya", serf;
-    font-weight:700;
-    font-size:36px;
+    align-items:flex-end;
+    margin-left:20px;
 }
 
-.header div p:hover {
-    text-shadow:0 0 10px orangered;
+.header h1 {
+    font-size:36px;
+    font-weight:700;
+}
+
+.header div p {
+    display:inline-block;
+    margin-right:20px;
+}
+
+.header p:hover {
     font-weight:800;
+    text-shadow:0 0 10px orangered;
     cursor:pointer;
 }
 
-.header div {
-    display:flex;
-    align-items:flex-end;
-}
-
-/* .header div ul {
-    list-style-type: none;
-}
-
-.header div ul li {
-    display:inline-flex;
-}
-
-.header div ul li::before {
-    padding-left:10px;
-    padding-right:10px;
-    content: "|";
-}
-
-.header div ul li:first-child::before {
-    content:none;
-} */
-
-/* ----- sidebar ----- */
-.sidebar {
-    /* border:1px solid red; */
-    margin-left:20px;
-    max-width:200px;
-    min-width:200px;
-    margin-bottom:10px;
-    text-align:center;
-}
-
-.sidebar div {
-    /* border:1px solid black; */
-    margin-bottom:none;
-}
-
-.sidebar img {
-    max-width:160px;
-    margin-below:20px;
-}
-
-.sidebar h2 {
-    text-transform:lowercase;
+/* ---------- projects ---------- */
+.projects h2 {
     font-variant:small-caps;
-    font-size:24px;
-    letter-spacing:.40rem;
-    margin-bottom:20px;
-    padding-bottom:5px;
-    border-bottom: 1px solid black;
-}
-
-.sidebar div ul li {
-    padding-bottom:20px;
-}
-
-.sidebar div ul li::after {
+    text-transform:lowercase;
     text-align:center;
+    letter-spacing:.40rem;
+    margin-top:40px;
+    padding-bottom:5px;
+    text-align:center;
+}
+
+/* This hack adds the rule below the h2 head. */
+.projects h2::after {
+    border-bottom:1px solid black;
     content:"";
     display:block;
+    width:200px;
+    left:0;
+    right:0;
+    margin:0 auto;
     padding-bottom:20px;
-    margin:0 70px;
-    border-bottom:1px solid black;
 }
 
-.sidebar div ul li:last-child::after {
-    border-bottom:none;
-    padding-bottom:none;
-}
-
-/* ----- page ----- */
-.resume {
+.panels {
     display:flex;
-    align-items:flex-start;
-    /* border: 1px solid blue; */
-    margin-left:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:left;
+    flex-flow:0 0 100px;
+    row-gap:20px;
+    column-gap:20px;
+}
+
+.panel {
+    text-align:center;
+    background-color:#ddd;
+    border-radius:10px;
+    padding:20px;
+}
+
+.panel:hover {
+    transform: scale(1.2);
+}
+
+/*This is not behaving quite correctly */
+.panel:first-of-type {
+    transform: scale(1.2);
+}
+
+.panel:first-of-type:not(:hover) {
+    transform:none;
+}
+
+.panel h3 {
+    font-family:"Alegreya Sans", sans-serif;
+    margin-bottom:10px;
+}
+
+/* This hack adds the rule below the project titles. */
+.panel h3::after {
+    border-bottom:1px solid black;
+    content:"";
+    display:block;
+    width:40%;
+    left:0;
+    right:0;
+    margin:0 auto;
+    padding-bottom:10px;
+}
+
+.panel img {
+    width:100px;
+    box-shadow: 0px 12px 12px 0px rgb(0 0 0 / 50%);
+}
+
+/* ---------- about ---------- */
+.resume {
+    display:block;
+    background-color:#ddd;
+    border-radius:10px;
+    margin:20px 20px 0px 20px;
     padding: 20px;
+}
+
+.resume table {
+    margin:0px;
+    padding:0px;
 }
 
 .resume td {
     padding:0px 10px 5px 0;
     vertical-align:top;
-    
 }
 
-.resume h3 {
+.resume td h3 {
     font-weight:700;
-    margin-top:10px;
+    margin-top:20px;
 }
 
-.resume h3:first-child {
+.resume td h3:first-child {
     margin-top:0;
 }
-
-#contact {
-    .color:red;
-    align-items:flex-end;
+.resume td p {
+    margin:10px 0px;
 }
 
-/* ----- page ----- */
+/* ---------- addresses ---------- */
+.contact {
+    display:block;
+    background-color:#ddd;
+    border-radius:10px;
+    margin:20px 20px 0px 20px;
+    padding:20px;
+}
+
+.contact  {
+
+}
+.contact p:last-child {
+    margin-bottom:40px;
+}
+
+/* ----- footer ----- */
 footer p {
     font-family:"Alegreya Sans", sans-serif;
     font-size:12px;
     margin-left:20px;
-    margin-bottom:20px;
+    padding:20px 20px 20px 20px;
+    width:100%;
     position:fixed;
+    background-color:white;
     bottom:0;
 }
