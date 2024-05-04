@@ -64,7 +64,6 @@ html {
     display:flex;
     justify-content:space-between;
     padding: 20px;
-    color: red;
 }
 .header h1 {
     display: inline-block;
@@ -97,12 +96,12 @@ html {
 
 /* ----- sidebar ----- */
 .sidebar {
-    border:1px solid black;
-    display:flex;
+    border:1px solid red;
     margin-left:20px;
     max-width:200px;
     min-width:200px;
     padding:20px;
+    text-align:center;
 }
 .sidebar h2 {
     text-transform:lowercase;
@@ -112,5 +111,23 @@ html {
 }
 
 .sidebar div {
-        
+    border:1px solid black;
+}
+
+.sidebar div p {
+    padding-bottom:20px;
+    /* margin-bottom:20px; */
+}
+
+.sidebar div p::after {
+    text-align:center;
+    content:"";
+    display:block;
+    padding-bottom:20px;
+    margin:0 40px;
+    border-bottom:1px solid black;
+}
+
+.sidebar a {
+    text-decoration:none;
 }
