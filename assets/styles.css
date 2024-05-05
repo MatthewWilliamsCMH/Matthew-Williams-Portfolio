@@ -39,6 +39,22 @@ h2::after {
     border-bottom:1px solid #777;
 }
 
+@media screen and (max-width:215px) {
+    .header {
+        display:block;
+        text-align:center;
+    }
+
+    .header div p {
+        display:block;
+    }
+    .contact img {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
 /* ---------- header ---------- */
 .header {
     display:flex;
@@ -61,17 +77,6 @@ h2::after {
     margin-right:20px;
 }
 
-@media screen and (max-width:215px) {
-    .header {
-        display:block;
-        text-align:center;
-    }
-
-    .header div p {
-        display:block;
-    }
-
-}
 .header p:hover {
     font-weight:800;
     text-shadow:0 0 10px orangered;
@@ -186,12 +191,18 @@ h2::after {
 }
 
 .contact img {
+    flex:0 0 auto;
     max-width:100px;
+    margin-right:20px;
 }
 
 .contact div p {
     flex:1 1 auto;
     margin-right:20px;
+}
+
+.contact div p:first-child {
+    margin-top:0px;
 }
 
 .contact div p:last-child {
