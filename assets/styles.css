@@ -185,7 +185,7 @@ h2::after {
 .contact {
     display:flex;
     flex-wrap:wrap;
-    justify-content:flex-start;
+    justify-content:center;
     align-items:flex-start;
     margin:0px 20px;
 }
@@ -194,6 +194,7 @@ h2::after {
     flex:0 0 auto;
     max-width:100px;
     margin-right:20px;
+    justify-content:center;
 }
 
 .contact p {
