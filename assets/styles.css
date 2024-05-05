@@ -104,16 +104,12 @@ h2::after {
 }
 
 .panel:hover {
-    transform:scale(1.1);
+    box-shadow:0 0 10px orangered;
 }
 
-/*This is not behaving quite correctly */
-.panel:first-of-type {
+/*As a designer, not a fan of having one panel be larger than the others, but it meets the brief. */
+.panels div:first-child {
     transform:scale(1.1);
-}
-
-.panel:first-of-type:not(:hover) {
-    transform:none;
 }
 
 .panel h3 {
@@ -174,18 +170,31 @@ h2::after {
 }
 
 /* ---------- addresses ---------- */
-.contact {
-    display:block;
+.contacts {
     background-color:#ddd;
     border-radius:10px;
     margin:20px 20px 0px 20px;
     padding:20px;
 }
 
-.contact  {
-
+.contact {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin:0px 20px;
 }
-.contact p:last-child {
+
+.contact img {
+    max-width:100px;
+}
+
+.contact div p {
+    flex:1 1 auto;
+    margin-right:20px;
+}
+
+.contact div p:last-child {
     margin-bottom:50px;
 }
 
