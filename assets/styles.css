@@ -196,7 +196,7 @@ h2::after {
     margin-right:20px;
 }
 
-.contact div p {
+.contact p {
     flex:1 1 auto;
     margin-right:20px;
 }
@@ -205,7 +205,7 @@ h2::after {
     margin-top:0px;
 }
 
-.contact div p:last-child {
+.contact p:last-child {
     margin-bottom:50px;
 }
 
