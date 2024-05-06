@@ -4,7 +4,7 @@ Simple overview of use/purpose.
 
 ## Description
 
-This page is a portfolio page for Matthew Williams. It includes contact information, a resume, and links to projects Matthew has completed. A screen shot of the open portfolio can be viewed [here] (./assets/portfolio.jpg).
+This page is a portfolio page for Matthew Williams. It includes contact information, a resume, and links to projects Matthew has completed. A screen shot can be viewed ![Matthew Williams's Portfolio](./assets/portfolio.jpg).
 
 ## Matthew Williams is the author of this page.
 
