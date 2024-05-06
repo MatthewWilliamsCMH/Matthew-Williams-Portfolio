@@ -6,7 +6,7 @@ Matthew Williams's Portfolio
 
 This page is a portfolio page for Matthew Williams. It includes contact information, a resume, and links to projects Matthew has completed. A screen shot can be viewed ![Matthew Williams's Portfolio](./assets/Matthew-Williams-Portfolio.jpg).
 
-The hyperlink to the page is ![matthewwilliamscmh.github.io/Matthew-Williams-Portfolio](https://matthewwilliamscmh.github.io/Matthew-Williams-Portfolio).
+The hyperlink to the page is [matthewwilliamscmh.github.io/Matthew-Williams-Portfolio](https://matthewwilliamscmh.github.io/Matthew-Williams-Portfolio).
 
 ## Author
 
