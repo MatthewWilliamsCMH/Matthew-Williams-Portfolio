@@ -4,8 +4,6 @@ Matthew Williams's Portfolio
 
 ## Description
 
-This page is a portfolio page for Matthew Williams. It includes contact information, a résumé, and links to projects Matthew has completed. A screen shot can be viewed ![Matthew Williams's Portfolio](./assets/portfolio.jpg).
-
 This page is a portfolio page for Matthew Williams. It includes contact information, a resume, and links to projects Matthew has completed. A screen shot can be viewed ![Matthew Williams's Portfolio](./assets/Matthew-Williams-Portfolio.jpg).
 
 ## Author
