@@ -1,20 +1,27 @@
-/* ---------- universal ---------- */
+:root {
+    --myGray: #ddd;
+}
+    /* ---------- universal ---------- */
   * {
     font-family:"Alegreya", serif;
     font-size:16px;
     font-weight:400;
     line-height: 135%;
-    padding:0;
-    margin:0;
     color:black;
 }
 
-p {
-    margin:10px 0px;
+.container {
+    display:flex;
+    column-gap:20px;
+    row-gap:20px;
+    margin:40px 20px 0px 20px;
 }
 
-a {
-    text-decoration:none;
+h1 {
+    flex:0 0 auto;
+    font-family:"Alegreya", serif;
+    font-size:36px;
+    font-weight:700;
 }
 
 h2 {
@@ -23,21 +30,26 @@ h2 {
     font-weight:400;
     text-transform:lowercase;
     color:#555;
-    text-align:center;
     letter-spacing:.40rem;
-    margin-bottom:20px;
+    padding:10px 0;
+    white-space:nowrap;
 }
 
 /* This hack adds the rule below the projects h2 head. */
 h2::after {
     display:block;
     content:"";
-    max-width:200px;
-    left:0;
-    right:0;
+    max-width:75px;
     margin:0 auto;
     padding-bottom:20px;
     border-bottom:1px solid #777;
+}
+
+p {
+    margin-bottom:10px;
+}
+a {
+    text-underline-offset:.5em;
 }
 
 @media screen and (max-width:631px) {
@@ -49,70 +61,98 @@ h2::after {
 }
 
 @media screen and (max-width:543px) {
-    .header h1, .nav {
+    nav h1, div {
         display:block;
         margin-left:auto;
         margin-right:auto;
     }
  }
 
-/* ---------- header ---------- */
-.header {
+/* ---------- name and nav ---------- */
+header {
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
     align-items:baseline;
     margin:0px 20px;
-    column-gap:20px;
-    min-width:
 }
 
-.header h1 {
-    flex:0 0 auto;
-    font-family:"Alegreya", serif;
-    font-size:36px;
-    font-weight:700;
-}
-
-.header .nav {
+nav {
     display:flex;
-    wrap:nowrap;
+    flex-wrap:nowrap;
     column-gap:20px;
 }
 
-.header div p {
+nav p {
     flex:1 1 auto;
     display:inline-flex;
-    /* margin-right:20px; */
 }
 
-.header p:hover {
+nav p:hover {
     font-weight:800;
     text-shadow:0 0 10px orangered;
     cursor:pointer;
 }
 
-/* ---------- projects ---------- */
-.projects h2 {
+/* ---------- about ---------- */
+.portrait {
+    display:block;
     text-align:center;
-    margin-top:40px;
-    padding-bottom:5px;
+    width:152px;
+}
+p img {
+    margin-top:30px;
+    width:100px;
+    height:max-content;
 }
 
+.item1 {grid-column: narrative;}
+.item2 {grid-column: category;}
+.item3 {grid-column: description;}
+ 
+.quals {
+    display:grid;
+    grid-template-columns: auto, 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "narrative narrative"
+        "category description"
+        "category description";
+    row-gap: 10px;
+    column-gap:20px;
+    width:100%;
+    padding:20px;
+    background-color:var(--myGray);
+    border-radius:10px;
+}
+
+.quals h3 {
+    font-family:"Alegreya SC", serif;
+    font-weight:500;
+    text-transform:lowercase;
+    letter-spacing:.20rem;
+    margin-top:20px;
+}
+
+.quals h3:first-child {
+    margin-top:0;
+}
+
+/* ---------- projects ---------- */
 .panels {
     display:flex;
     flex-wrap:wrap;
+    flex:1 1 auto;
     justify-content:center;
     align-items:left;
     row-gap:20px;
     column-gap:20px;
-    margin:0 20px;
 }
 
 .panel {
     text-align:center;
     flex:1 1 auto;
-    background-color:#ddd;
+    background-color:var(--myGray);
     border-radius:10px;
     padding:20px;
 }
@@ -149,78 +189,29 @@ h2::after {
     content:"";
     display:block;
     max-width:40px;
-    left:0;
-    right:0;
     margin:0 auto;
     padding-bottom:10px;
 }
 
-/* ---------- about ---------- */
-.resume {
-    display:block;
-    background-color:#ddd;
-    border-radius:10px;
-    margin:20px 20px 0px 20px;
-    padding:20px;
+.panel a {
+    text-decoration:none;
 }
-
-.resume table {
-    margin:0px;
-    padding:0px;
-}
-
-.resume td {
-    padding:0px 10px 5px 0;
-    vertical-align:top;
-}
-
-.resume td h3 {
-    font-family:"Alegreya SC", serif;
-    font-weight:500;
-    text-transform:lowercase;
-    letter-spacing:.20rem;
-    margin-top:20px;
-}
-
-.resume td h3:first-child {
-    margin-top:0;
-}
-
-.resume td p:first-child {
-    margin-top:0;
-}
-
 /* ---------- addresses ---------- */
-.contacts {
-    background-color:#ddd;
-    border-radius:10px;
-    margin:20px 20px 0px 20px;
-    padding:20px;
-}
 
 .contact {
-    display:flex;
-    flex-wrap:wrap;
-    max-width:max-content;
-    align-items:flex-start;
-    column-gap:20px;
-}
-
-.contact img {
-    flex:0 0 auto;
-    max-width:100px;
-}
-
-.contact p {
-    flex:0 0 auto;
-}
-
-.contact div p:first-child {
-    margin-top:0px;
+    display:block;
+    background-color:var(--myGray);
+    border-radius:10px;
+    padding:20px;
+    width:100%
 }
 
 .contact p:last-child {
-    margin-bottom:50px;
+    margin-bottom: 60px ;0px;
+}
+
+.contact a {
+    text-decoration:none;
 }
 
 /* ----- footer ----- */

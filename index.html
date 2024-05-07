@@ -14,65 +14,28 @@
 </head>
 
 <body>
-    <nav class="header">
+    <header>
         <h1>Matthew Williams</h1>
-        <div class="nav">
-            <p><a href=#portfolio>Portfolio</a></p>
-            <p><a href=#about>About</a></p>
+        <nav>
+            <p><a href="about">About Me</a></p>
+            <p><a href=#projects>Portfolio</a></p>
             <p><a href=#addresses>Contact</a></p>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <main id="portfolio" class="projects">
-        <h2>Projects</h2>
-        <div class="panels">
-            <div class="panel">
-                <a href="https://matthewwilliamscmh.github.io/homework-01/" target="_blank">
-                    <h3>Horiseon</h3>
-                    <img src="./assets/Horiseon_thumb.jpg" alt="Horiseon Social Solution Servcies landing page"/>
-                </a>
+    <main>
+        <section class="container" id="about" >
+            <div class="portrait">
+                <h2>About Me</h2>
+                <p><img src="./assets/portrait.jpg" alt="Portrait of Matthew Williams" /></p>
             </div>
-            <div class="panel">
-                <a href="./assets/comingsoon.html" target="_blank">
-                    <h3>Tree Survey</h3>
-                    <img src="./assets/tree_thumb.jpg" alt="Tree Survey web application landing page"/>
-                </a>
-            </div>
-            <div class="panel">
-                <a href="./assets/comingsoon.html" target="_blank">
-                    <h3>Project 3</h3>
-                    <img src="./assets/coming_soon_thumb.jpg" alt="Coming-Soon icon"/>
-                </a>
-            </div>
-            <div class="panel">
-                <a href="./assets/comingsoon.html" target="_blank">
-                    <h3>Project 4</h3>
-                    <img src="./assets/coming_soon_thumb.jpg" alt="Coming-Soon icon"/>
-                </a>
-            </div>
-            <div class="panel">
-                <a href="./assets/comingsoon.html" target="_blank">
-                    <h3>Project 5</h3>
-                    <img src="./assets/coming_soon_thumb.jpg" alt="Coming-Soon icon" />
-                </a>
-            </div>
-            <div class="panel">
-                <a href="./assets/comingsoon.html" target="_blank">
-                    <h3>Project 6</h3>
-                    <img src="./assets/coming_soon_thumb.jpg" alt="Coming-Soon icon" />
-                </a>
-            </div>        
-        </div>
-    </main>
-
-    <main id="about" class="resume">
-        <h2>R&eacute;sum&eacute;</h2>
-        <table>
-            <tr>
-                <td>
-                    <p>Experience:</p>
-                </td>
-                <td>
+            <div class="quals">
+                <div class="item1">
+                    <p>I have recently completed a certification for web development through The Ohio State University and EdX where I expanded my knowledge of HTML, CSS, and JavaScript and added new technologies to my toolbox. I am now qualified as a full-stack developer.</p>
+                    <p>See my r&eacute;sum&eacute; below for additional details on my experience and education.</p>
+                </div>
+                <div class="item2">Experience:</div>
+                <div class="item3">
                     <h3>Book Design and Typesetting</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis lacus placerat, viverra libero in, aliquam nunc. Sed mattis ante sed tortor porta eleifend. Nullam cursus lectus quis ornare lobortis. Proin aliquam ipsum et fermentum lacinia. Integer vestibulum laoreet neque vel ullamcorper. Proin condimentum enim eu dolor posuere, id pellentesque metus tempor. Pellentesque scelerisque a massa vitae facilisis. Vestibulum hendrerit leo nec erat pulvinar auctor. Nam condimentum elit tellus, non mattis ante auctor id. Vestibulum sit amet viverra mi. Cras ultrices lacus vitae porta mattis. Aliquam erat volutpat. Sed ut quam magna. Integer ipsum sem, facilisis at ullamcorper at, cursus sit amet enim. Fusce ut consectetur diam, in facilisis arcu.</p>
                     <p>Pellentesque pellentesque dictum massa, et elementum est tincidunt sit amet. Nunc ac viverra justo, sed dictum turpis. Curabitur cursus velit et mauris facilisis, vel efficitur mi dictum. Vivamus ut velit in nibh varius efficitur. Suspendisse finibus ullamcorper elementum. Vivamus hendrerit diam laoreet ipsum sodales, nec porttitor felis facilisis. Sed nulla urna, vehicula quis elit eget, sagittis aliquet erat.</p>
@@ -82,32 +45,61 @@
                     <p>HTML</p>
                     <p>CSS</p>
                     <p>XML</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Education:</p>
-                </td>
-                <td>
+                </div>
+                <div class="item2">Education:</div>
+                <div class="item3">
                     <p>The Ohio State University/EdX, Web Developer Certification</p>
                     <p>The Ohio State University, MA English</p>
                     <p>Youngstown State Univeristy, BA English</p>
-                </td>
-            </tr>
-        </table>
-    </main>
-
-    <main id="addresses" class="contacts">
-        <h2>Contact</h2>
-        <div class="contact">
-            <img src="./assets/portrait.JPG" alt="Computer rendering of Matthew Williams"/>
-            <div>
-                <p>Email: <a href="mailto:matthewwilliamscmh@icloud.com">matthewwilliamscmh@icloud.com</a></p>
-                <p>Phone: (000) 000-0000</p>
-                <p>Linked-in: <a href="https://www.linkedin.com/in/matthew-williams-40117a19/">matthew-williams-40117a19</a></p>
-                <p>Address: 1000 Mystreet Avenue &bullet; Grandveiw Heights, Ohio 43212</p>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="container" id="portfolio">
+            <h2>Projects</h2>
+            <div class="panels">
+                <div class="panel">
+                    <a href="https://matthewwilliamscmh.github.io/homework-01/" target="_blank">
+                        <h3>Horiseon</h3>
+                        <img src="./assets/Horiseon_thumb.jpg" alt="Horiseon Social Solution Servcies landing page"/>
+                    </a>
+                </div>
+                <div class="panel">
+                    <a href="./assets/comingsoon.html" target="_blank">
+                        <h3>Tree Survey</h3>
+                        <img src="./assets/tree_thumb.jpg" alt="Tree Survey web application landing page"/>
+                    </a>
+                </div>
+                <div class="panel">
+                    <a href="./assets/comingsoon.html" target="_blank">
+                        <h3>Project 3</h3>
+                        <img src="./assets/coming_soon_thumb.jpg" alt="Coming-Soon icon"/>
+                    </a>
+                </div>
+                <div class="panel">
+                    <a href="./assets/comingsoon.html" target="_blank">
+                        <h3>Project 4</h3>
+                        <img src="./assets/coming_soon_thumb.jpg" alt="Coming-Soon icon"/>
+                    </a>
+                </div>
+                <div class="panel">
+                    <a href="./assets/comingsoon.html" target="_blank">
+                        <h3>Project 5</h3>
+                        <img src="./assets/coming_soon_thumb.jpg" alt="Coming-Soon icon" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="addresses">
+            <h2>Contact</h2>
+            <div class="contact">
+                    <p>Email: <a href="mailto:matthewwilliamscmh@icloud.com">matthewwilliamscmh@icloud.com</a></p>
+                    <p>Phone: (000) 000-0000</p>
+                    <p>Linked-in: <a href="https://www.linkedin.com/in/matthew-williams-40117a19/">matthew-williams-40117a19</a></p>
+                    <p>Address: 1000 Mystreet Avenue &bullet; Grandveiw Heights, Ohio 43212</p>
+            </div>
+        </section>
     </main>
 </body>
 
