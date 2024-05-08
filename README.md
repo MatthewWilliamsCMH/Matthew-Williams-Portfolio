@@ -4,13 +4,22 @@ Matthew Williams's Portfolio
 
 ## Description
 
-This page is a portfolio page for Matthew Williams. It includes contact information, a resume, and links to projects Matthew has completed. A screen shot can be viewed ![Matthew Williams's Portfolio](./assets/Matthew-Williams-Portfolio.jpg).
+You're looking at Matthew Williams's Portfolio. It attempts to summarize my qualifications both as a coder and as and employee generally. On the page, you'll find information about the kind of work I'm pursuing, a résumé detailing my past work experience and education, links to coding project's I've completed, and a list of ways to contact me.
 
-The hyperlink to the page is [matthewwilliamscmh.github.io/Matthew-Williams-Portfolio](https://matthewwilliamscmh.github.io/Matthew-Williams-Portfolio).
+## Installation
 
-## Author
+Matthew Williams's Portfolio requires no installation.
 
-Matthew Williams is the author of this page.
+## Usage
+You can see a screen shot of my portfolio page below. To link to my page, click [here](https://matthewwilliamscmh.github.io/Matthew-Williams-Portfolio).
+
+![Matthew Williams's Portfolio](./assets/Matthew-Williams-Portfolio.jpg).
+
+The links at the top of the page will scroll to the relevant sections of the page. In the project's section, click on one of the panels to open that site in a new browser window or tab. The digital addresses in the contact section are hyperlinked to my email address or to the relevant website.
+
+## Credits
+
+I did a lot of googling for how to control the flexbox and grid models for this portfolio. Among the most helpful were [SheCodes](https://www.shecodes.io/athena/), [CSS-Tricks](https://css-tricks.com), [Flexbox Cheatsheet Cheatsheet](https://jonitrythall.com/flexbox-cheatsheet), [MDN Web Docs](https://developer.mozilla.org), and [W3Schools](https://www.w3schools.com).
 
 ## Version History
 
