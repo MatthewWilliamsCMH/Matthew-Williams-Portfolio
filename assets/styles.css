@@ -101,8 +101,8 @@ nav p {
     display:inline-flex;
 }
 
-nav p:hover {
-    font-weight:800;
+nav a:hover {
+    font-weight:700;
     text-shadow:0 0 10px orangered;
     cursor:pointer;
 }
@@ -220,6 +220,12 @@ p img {
 
 .contact a {
     text-decoration:none;
+}
+
+.contact a:hover {
+    font-weight:700;
+    text-shadow:0 0 10px orangered;
+    cursor:pointer;
 }
 
 /* ----- footer ----- */
