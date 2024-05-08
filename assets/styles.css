@@ -10,6 +10,14 @@
     color:black;
 }
 
+body {
+    padding-bottom:56px;
+}
+
+html {
+    min-width:300px;
+}
+
 .container {
     display:flex;
     column-gap:20px;
@@ -48,23 +56,28 @@ h2::after {
 p {
     margin-bottom:10px;
 }
+
+ul {
+    padding-left:20px;
+}
+li {
+    text-indent:-20px;
+}
+
 a {
     text-underline-offset:.5em;
 }
 
-@media screen and (max-width:631px) {
-    .contact img {
+@media screen and (max-width:525px) {
+    header h1, header nav, .container .portrait, .container h2  {
         display:block;
+        text-align:center;
         margin-left:auto;
         margin-right:auto;
     }
-}
 
-@media screen and (max-width:543px) {
-    nav h1, div {
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
+    .container {
+        flex-wrap:wrap;
     }
  }
 
@@ -179,7 +192,6 @@ p img {
 }
 
 .panel h3 {
-    font-family:"Alegreya Sans", sans-serif;
     margin-bottom:10px;
 }
 
@@ -197,17 +209,12 @@ p img {
     text-decoration:none;
 }
 /* ---------- addresses ---------- */
-
 .contact {
     display:block;
     background-color:var(--myGray);
     border-radius:10px;
     padding:20px;
     width:100%
-}
-
-.contact p:last-child {
-    margin-bottom: 60px ;0px;
 }
 
 .contact a {
